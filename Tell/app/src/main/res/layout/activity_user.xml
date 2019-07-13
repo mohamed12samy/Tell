@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity"
+    android:padding="50dp"
+    android:orientation="vertical"
+    android:textAlignment="center">
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:background="@drawable/back_ground"
+        android:src="@drawable/dex"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:text="name namr"
+        android:textSize="40sp"
+android:padding="10dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Bio"
+        android:text="Bio Bio Bio Bio Bio BioBio Bio Bio"
+        android:textSize="40sp"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        />
+
+    <ListView
+        android:id="@+id/postList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "371248244165",
+    "firebase_url": "https://tell-296ab.firebaseio.com",
+    "project_id": "tell-296ab",
+    "storage_bucket": "tell-296ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371248244165:android:e1580e0ef000dd4f",
+        "android_client_info": {
+          "package_name": "com.example.tell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371248244165-ovr745hu8adbohge4b3s0g0fn6a3uflg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tell",
+            "certificate_hash": "7fdd11cbe8e47656b9f0e5ec6ae6a84f42024a5d"
+          }
+        },
+        {
+          "client_id": "371248244165-uhtmi6c4maa5gpsrbq83rqg47gic93r8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwb0PMD4HAtPUUOA63oER76ABHq7XOq8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371248244165-uhtmi6c4maa5gpsrbq83rqg47gic93r8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

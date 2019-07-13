@@ -8,47 +8,59 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     tools:context=".Home"
     android:orientation="vertical">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_height="136dp"
         android:layout_marginBottom="20dp"
-        android:padding="15dp"
-        android:focusableInTouchMode="true">
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="15dp">
 
         <EditText
-            android:id="@+id/ET"
+            android:id="@+id/EditTextpost"
             android:layout_width="275dp"
             android:layout_height="103dp"
-            android:ems="10"
-            android:hint="Write your experince"
             android:layout_weight="1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Write your experince"
+            android:inputType="text|textMultiLine"
             android:lineSpacingExtra="10sp"
+            android:padding="10dp"
             android:singleLine="false"
             android:textSize="20sp"
             tools:layout_editor_absoluteX="19dp"
-            tools:layout_editor_absoluteY="17dp"
-            android:padding="10dp"
-            android:inputType="text|textMultiLine"
-            android:gravity="top"></EditText>
-            <!--android:onClick="incSize"/-->
+            tools:layout_editor_absoluteY="17dp"></EditText>
+        <!--android:onClick="incSize"/-->
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="40dp"
-            android:layout_marginLeft="10dp"/>
+            app:srcCompat="@android:drawable/ic_menu_camera"
+
+            />
 
     </LinearLayout>
-    <!--Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="91dp"
-        android:text="Button"
-        android:onClick="oo"/-->
+    <Button
+     android:id="@+id/PostB"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="post"
+     android:textAlignment="center"
+     android:layout_gravity="center"
+     android:onClick="SubmitPost"/>
+</LinearLayout>
+
     <ListView
         android:id="@+id/postList"
         android:layout_width="match_parent"
