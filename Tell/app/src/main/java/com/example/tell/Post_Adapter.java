@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class Post_Adapter  extends ArrayAdapter<Post> {
-    public Post_Adapter (Context context, int resource, ArrayList<Post> objects) {
+public class Post_Adapter extends ArrayAdapter<Post> {
+    public Post_Adapter(Context context, int resource, ArrayList<Post> objects) {
         super(context, 0, objects);
     }
 
@@ -20,7 +20,7 @@ public class Post_Adapter  extends ArrayAdapter<Post> {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.post, parent, false);
         }
@@ -28,6 +28,8 @@ public class Post_Adapter  extends ArrayAdapter<Post> {
         ImageView userPhoto = (ImageView) listItemView.findViewById(R.id.userphoto);
         TextView username = (TextView) listItemView.findViewById(R.id.username);
         TextView postT = (TextView) listItemView.findViewById(R.id.posttext);
+        TextView Date = (TextView) listItemView.findViewById(R.id.DateView);
+
 
         Post post = getItem(position);
 
@@ -35,9 +37,10 @@ public class Post_Adapter  extends ArrayAdapter<Post> {
                 .load(post.getUserphotoUrl())
                 .into(userPhoto);*/
         //userPhoto.setVisibility(View.GONE);
-        userPhoto.setImageResource(post.getUserphotoUrl());
-        username.setText(post.getmUserName());
+        //userPhoto.setImageResource(post.getUserphotoUrl());
+        username.setText(post.getUserName/*mUserID*/());
         postT.setText(post.getmPostText());
+        Date.setText(post.getDate());
 
         return listItemView;
     }

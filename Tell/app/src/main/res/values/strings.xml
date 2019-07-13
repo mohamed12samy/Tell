@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Tell</string>
+    <string name="deleteAcount"> <u>Delete Account</u>.</string>
 </resources>

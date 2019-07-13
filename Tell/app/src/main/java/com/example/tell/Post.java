@@ -1,41 +1,61 @@
 package com.example.tell;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+//model
 public class Post {
-    private String mUserName ;
-    private String mPostText ;
+    private String mPostText;
+    private String mUserID;
     //private String userphotoUrl;
     private int userphotoUrl;
+    private String date;
+    private String UserName;
 
-    public Post(){}
+    public Post() {
+    }
 
-    public Post (String name ,String postT ,int userPhotoURL){
+    public Post(String Name,String userID, String postT, int userPhotoURL) {
 
-        mUserName = name;
+        mUserID = userID;
         mPostText = postT;
         userphotoUrl = userPhotoURL;
+        UserName = Name;
+        setDate();
     }
 
-    public String getmUserName() {
-        return mUserName;
-    }
-
-    public void setmUserName(String mUserName) {
-        this.mUserName = mUserName;
-    }
-
+    /* public String getmUserName() {
+         return "sami";
+     }
+ */
     public String getmPostText() {
         return mPostText;
-    }
-
-    public void setmPostText(String mPostText) {
-        this.mPostText = mPostText;
     }
 
     public int getUserphotoUrl() {
         return userphotoUrl;
     }
 
-    public void setUserphotoUrl(int userphotoUrl) {
-        this.userphotoUrl = userphotoUrl;
+    public String getmUserID() {
+        return mUserID;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    private void setDate() {
+        Date current = Calendar.getInstance().getTime();
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss a");
+        this.date = df.format(current);
+    }
+
+    public String getUserName() {
+        return UserName;
+    }
+
+    public void setUserName(String userName) {
+        UserName = userName;
     }
 }
